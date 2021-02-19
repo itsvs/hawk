@@ -31,7 +31,7 @@ dictionaries but with a specified base url. for youtube channels, you'd want to 
 
 access by typing `@base key` into the search box and hitting enter (for example, `@gh h`).
 
-```json
+```json5
 {
     "gh": {
         "base": "https://github.com/itsvs/",
@@ -50,7 +50,7 @@ ports, pages, shortlink targets, you name it. use tinyurl often? set it up as a 
 
 access by typing `@base suffix` into the search box and hitting enter (for example, `@l 3000`).
 
-```json
+```json5
 {
     "l": {
         "base": "http://localhost:",
@@ -70,7 +70,7 @@ exactly what it sounds like. stored in `data/with_direct.json`, copied below.
 
 access by typing `-key` (for example, `-m`).
 
-```json
+```json5
 {
     "m": {
         "link": "https://mail.google.com",
