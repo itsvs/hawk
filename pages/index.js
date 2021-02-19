@@ -10,9 +10,7 @@ export default function Index() {
         <Header />,
         <Layout>
             <tr>
-                <td>
-                    {Object.keys(withKeys).map((base) => keysHint(base))}
-                </td>
+                <td>{Object.keys(withKeys).map((base) => keysHint(base))}</td>
                 <td>
                     {Object.keys(withSuffix).map((base) => suffixHint(base))}
                 </td>
@@ -37,7 +35,14 @@ function keysHint(base) {
     return (
         <tr key={"@" + base}>
             <td className="title">
-                <a href={withKeys[base].base} className="tooltip" title={withKeys[base].hint}>@{base}<span className="tooltiptext">{withKeys[base].hint}</span></a>
+                <a
+                    href={withKeys[base].base}
+                    className="tooltip"
+                    title={withKeys[base].hint}
+                >
+                    @{base}
+                    <span className="tooltiptext">{withKeys[base].hint}</span>
+                </a>
             </td>
             {withKeys[base].keys ? (
                 <td>
@@ -52,7 +57,9 @@ function keysHint(base) {
                                 title={withKeys[base].keys[el]}
                             >
                                 {el}
-                                <span className="tooltiptext">{withKeys[base].keys[el]}</span>
+                                <span className="tooltiptext">
+                                    {withKeys[base].keys[el]}
+                                </span>
                             </a>
                         ))
                         .reduce((a, b) => [a, " ", b])}
@@ -67,7 +74,10 @@ function keysHint(base) {
 function suffixHint(base) {
     return (
         <tr key={"@" + base} className="tooltip">
-            <td className="title" title={withSuffix[base].hint}>@{base}<span className="tooltiptext">{withSuffix[base].hint}</span></td>
+            <td className="title" title={withSuffix[base].hint}>
+                @{base}
+                <span className="tooltiptext">{withSuffix[base].hint}</span>
+            </td>
             <td>{withSuffix[base].suffix}</td>
         </tr>
     );
@@ -89,7 +99,10 @@ function directHint(base) {
 function commandHint(base) {
     return (
         <tr key={"/" + base} className="tooltip">
-            <td className="title" title={withCommand[base].hint}>/{base}<span className="tooltiptext">{withCommand[base].hint}</span></td>
+            <td className="title" title={withCommand[base].hint}>
+                /{base}
+                <span className="tooltiptext">{withCommand[base].hint}</span>
+            </td>
             <td>{withCommand[base].title}</td>
         </tr>
     );

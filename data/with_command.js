@@ -1,9 +1,9 @@
 // change these!
-const owmHomeTown = "Hometown,State,Country"
-const owmAppId = "OpenWeatherMap App ID"
+const owmHomeTown = "Hometown,State,Country";
+const owmAppId = "OpenWeatherMap App ID";
 
 // don't change this!
-const outputTarget = "#commandOutput"
+const outputTarget = "#commandOutput";
 
 export default {
     w: {
@@ -17,9 +17,7 @@ export default {
                 url += plus;
             }
 
-            fetch(
-                url + "&units=imperial&appid=" + owmAppId
-            )
+            fetch(url + "&units=imperial&appid=" + owmAppId)
                 .then((response) => response.json())
                 .then((js) => {
                     var desc = js.weather["0"].description;

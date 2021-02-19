@@ -212,7 +212,8 @@ class Layout extends React.Component {
     }
 
     handleCommand(base, plus) {
-        if (Object.keys(withCommand).includes(base)) withCommand[base].call(plus);
+        if (Object.keys(withCommand).includes(base))
+            withCommand[base].call(plus);
     }
 }
 
