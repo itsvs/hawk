@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    font-family: "Lato", sans-serif;
+    font-size: large;
+    color: whitesmoke;
+    text-transform: lowercase;
+    background-color: transparent;
+}
+
+body {
+    background-image: linear-gradient(rgba(58, 58, 58, 0.8), rgba(58, 58, 58, 0.8)), url('https://source.unsplash.com/1920x1080/?nature+water');
+    background-size: cover;
+}
+
+td,
+td *,
+p * {
+    font-size: 25px !important;
+}
+
+table {
+    position: fixed;
+    top: 50%;
+    left: 15%;
+
+    transform: translate(0%, -50%);
+
+    width: 70vw;
+    border: 5vw;
+}
+
+td.title {
+    padding-left: 5vw;
+    color: var(--col-title) !important;
+}
+
+td.title a {
+    color: var(--col-title) !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+td {
+    padding-right: 1vw;
+}
+
+hr {
+    border: none;
+    height: 2px;
+}
+
+#lit_quote {
+    color: var(--col-title);
+}
+
+em {
+    color: whitesmoke;
+    font-size: 30px !important;
+    font-style: normal;
+}
+
+.quote {
+    margin-bottom: 0px;
+}
+
+.info {
+    margin-top: 0px;
+    text-align: end;
+}
+
+#author {
+    color: var(--col-title);
+}
+
+:root {
+    --col-bg: #3a3a3a;
+    --col-title: #a8a8a8;
+}
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+}
+
+td.title u {
+    color: var(--col-title);
+}
+
+.muted {
+    color: var(--col-title);
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 10pt !important;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

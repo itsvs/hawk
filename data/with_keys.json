@@ -1,0 +1,31 @@
+{
+    "gh": {
+        "base": "https://github.com/itsvs/",
+        "hint": "some of my github repos",
+        "keys": {
+            "h": "hawk",
+            "d": "dna",
+            "s": "starter"
+        }
+    },
+    "yt": {
+        "base": "https://youtube.com/",
+        "hint": "some cool youtubers",
+        "keys": {
+            "l": "c/LinusTechTips",
+            "m": "user/marquesbrownlee",
+            "e": "c/Engadget",
+            "d": "channel/UCqvULRRboZeXVezSm_XduLQ",
+            "p": "user/minutephysics"
+        }
+    },
+    "sp": {
+        "base": "https://open.spotify.com/playlist/",
+        "hint": "good background music",
+        "keys": {
+            "c": "37i9dQZF1DWVqfgj8NZEp1",
+            "s": "37i9dQZF1DX8Uebhn9wzrS",
+            "k": "37i9dQZF1DX5GaWacZZYT5"
+        }
+    }
+}

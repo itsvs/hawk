@@ -1,0 +1,20 @@
+{
+    "name": "hawk",
+    "version": "1.0.0",
+    "description": "Dynamic StartPage",
+    "author": "Vanshaj Singhania",
+    "license": "MIT",
+    "scripts": {
+        "dev": "next dev",
+        "export": "next build && next export",
+        "build": "next build",
+        "start": "next start",
+        "serve": "next build && next start"
+    },
+    "dependencies": {
+        "next": "^10.0.7",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "unsplash-js": "^7.0.4"
+    }
+}

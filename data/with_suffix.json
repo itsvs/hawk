@@ -1,0 +1,17 @@
+{
+    "l": {
+        "base": "http://localhost:",
+        "suffix": "port",
+        "hint": "localhost"
+    },
+    "r": {
+        "base": "https://reddit.com/r/",
+        "suffix": "subreddit",
+        "hint": "reddit"
+    },
+    "t": {
+        "base": "https://tinyurl.com/",
+        "suffix": "shortlink",
+        "hint": "tinyurl"
+    }
+}
